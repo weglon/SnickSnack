@@ -1,0 +1,41 @@
+h3 {
+  font-size: 35px;
+  margin: 5px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 25px;
+}
+
+input {
+  font-size: 18px !important;
+  width: 400px !important;
+}
+
+button {
+  font-size: 18px !important;
+  width: 435px !important;
+}
+
+#reg_div {
+  margin-top: 150px;
+}
+
+#acceptCheck {
+  opacity: 0.5;
+  font-size: 20px !important;
+}
+
+#acceptCheck:hover {
+  cursor: pointer;
+}
+
+.acceptdiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: 195px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+#view_user_container {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 200px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#view_user_container h1 {
+  color: #c14338;
+}
+
+#view_user_container > #profile_div {
+  background-color: #00000033;
+  border-radius: 15px;
+  width: 650px;
+  color: #efefac;
+}
+
+#view_user_container > #profile_div > .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#view_user_container > div {
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+}

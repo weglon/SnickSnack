@@ -1,0 +1,375 @@
+.outercontainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.maincontainer {
+  margin: 100px;
+  padding: 50px;
+  background-color: #00000022;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75% !important;
+  box-shadow: 2px 2px 4px #00000044;
+}
+
+#requests_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#deny_friend_button:hover,
+#accept_friend_button:hover {
+  opacity: 0.5 !important;
+}
+
+#deny_friend_button,
+#accept_friend_button {
+  width: 45px;
+  height: 45px;
+  margin: 5px !important;
+}
+
+#friend_info_div:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#accept_friend_button {
+  background-color: #36c240;
+}
+
+#deny_friend_button {
+  background-color: #c23636;
+}
+
+#deny_friend_button i,
+#accept_friend_button i {
+  color: #fff !important;
+}
+
+#requests_div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#requests_div > div > * {
+  margin: 10px;
+}
+
+#user_info_div:hover,
+#logo_div:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#feed_nav_right:hover,
+#feed_nav_left:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#feed_navigator {
+  overflow-x: hidden;
+  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+
+#feed_div {
+  margin-right: 900px;
+}
+
+#feed_navigation {
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#feeds_container {
+  display: flex;
+  flex-direction: row;
+}
+
+#feed_div > div,
+#user_posts > div,
+#posts_div > div {
+  background-color: #00000044;
+  box-shadow: 2px 2px 4px #00000066;
+  width: 800px;
+  overflow: hidden;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 25px;
+}
+
+#user_posts > .spacer,
+#feed_div > .spacer,
+#posts_div > .spacer {
+  display: block;
+  width: 800px;
+  height: 1px;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: #ffffff00 !important;
+  box-shadow: none !important;
+}
+
+#feed_div > div > .title,
+#user_posts > div > .title,
+#posts_div > div > .title {
+  color: #ef7626 !important;
+}
+
+.maincontainer > button {
+  width: 565px;
+}
+
+#new_post_button {
+  background-color: #393e4c;
+  color: #ececec;
+}
+
+#new_post_button > i {
+  color: #ececec !important;
+}
+
+#new_post_button:hover {
+  background-color: #00000022;
+}
+
+#post_input_div {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  width: 550px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #00000022;
+  background-color: #393e4c;
+  transition: 0.45s;
+}
+
+#post_input_div > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#post_input_div i {
+  color: #fff !important;
+}
+
+#post_input_div button {
+  overflow: hidden;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c14338 !important;
+  color: #fff !important;
+}
+
+#post_input_div button:hover {
+  background-color: #8e342c !important;
+}
+
+#post_input_div > input {
+  width: 90%;
+}
+
+#post_input_div > textarea {
+  width: 95%;
+  height: 95%;
+  font-size: 16px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000099;
+  z-index: 2;
+}
+
+.overlay_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: #353841;
+  box-shadow: 2px 2px 4px #00000022;
+  visibility: inherit;
+}
+
+#friend_overlay {
+  visibility: hidden;
+}
+
+#friend_overlay_container {
+  width: 600px;
+  height: 500px;
+}
+
+div[id*="overlay_container"] button {
+  width: 95%;
+}
+
+div[id*="overlay_container"] input {
+  width: 83%;
+}
+
+.nav {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: #42454e;
+}
+
+.nav_icon:hover i {
+  color: #202531 !important;
+  cursor: pointer;
+}
+
+div[class*="menu"] {
+  margin: 0px;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  width: 350px;
+  z-index: 1;
+  text-align: center;
+  overflow-x: scroll;
+  background-color: #42454e;
+}
+
+.settings_menu {
+  top: 60px;
+  left: 100%;
+}
+
+.settings_menu textarea {
+  margin: 0px;
+  padding: 10px;
+  width: 300px;
+  height: 90px;
+}
+
+.settings_menu .image_options > i {
+  margin: 5px !important;
+  padding: 0px !important;
+  font-size: 30px !important;
+}
+
+.settings_menu .image_options:hover,
+.settings_menu .color_options:hover {
+  opacity: 0.5 !important;
+  cursor: pointer;
+}
+
+.settings_menu .color_options {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.settings_menu div[class*="option_div"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.settings_menu button {
+  width: 325px;
+}
+
+.menu button {
+  width: 100%;
+  margin: 0px !important;
+}
+
+.menu {
+  top: 60px;
+  left: -390px;
+}
+
+.menu > div {
+  margin-top: 25px;
+}
+
+#friends_div {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #00000022;
+  width: 90%;
+  height: 400px;
+  border-radius: 15px;
+}
+
+#friends_div i {
+  width: 25px;
+  height: 25px;
+}
+
+#friends_div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#postdiv > div {
+  background-color: #deac61;
+  color: #202531;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 2px 2px 4px #00000055;
+  border-radius: 15px;
+}
+
+.nav > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

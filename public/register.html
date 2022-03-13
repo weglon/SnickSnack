@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Register new user - chatapp</title>
+    <link rel="stylesheet" href="css/loginstyle.css" />
+    <link rel="stylesheet" href="css/mainstyle.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script charset="utf-8" src="/scripts/util.js"></script>
+    <script charset="utf-8" src="/scripts/register.js"></script>
+    <div id="titlediv">
+      <i class="lni lni-rocket" id="nav_icon"></i>
+      <h1 id="logotype">SnickSnack</h1>
+    </div>
+    <div class="container">
+      <div id="reg_div" class="innercontainer">
+        <h3>Register a new user</h3>
+        <a href="/">Or login if you have an account</a>
+        <p id="error"></p>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="text" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <input
+          type="password"
+          id="confirmpass"
+          placeholder="Confirm password"
+        />
+        <div>
+          <p>
+            When creating an account your email, and your posts will be viewable
+            by developers of this website. This is a demo-project still under
+            development, it is strongly recommended to not use any sensitive
+            information when creating your profile. Further more when you
+            register this profile you need to accept to the information
+            mentioned above being stored on this website, and to the eventual
+            risks of registering to a indev-project.
+          </p>
+          <div class="acceptdiv">
+            <p>Accept</p>
+            <i
+              class="lni lni-checkmark-circle"
+              id="acceptCheck"
+              onClick="acceptTerms()"
+            ></i>
+          </div>
+        </div>
+        <button onclick="register()">Register</button>
+      </div>
+    </div>
+  </body>
+</html>

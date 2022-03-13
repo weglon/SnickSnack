@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login - Chatapp</title>
+    <link rel="stylesheet" href="css/loginstyle.css" />
+    <link rel="stylesheet" href="css/mainstyle.css" />
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script charset="utf-8" src="/scripts/changepass.js"></script>
+    <div id="titlediv">
+      <i class="lni lni-rocket" id="nav_icon"></i>
+      <h1 id="logotype">SnickSnack</h1>
+    </div>
+    <div class="container">
+      <div class="innercontainer">
+        <h3>Change your password</h3>
+        <p id="error"></p>
+        <input type="password" id="password" placeholder="New password" />
+        <input
+          type="password"
+          id="confirmpass"
+          placeholder="Confirm new password"
+        />
+        <button onclick="changepass()">Change Password</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/viewuserstyle.css" type="text/css" />
+    <link rel="stylesheet" href="/css/mainstyle.css" type="text/css" />
+    <link rel="stylesheet" href="/css/landingstyle.css" type="text/css" />
+  </head>
+  <body onload="checkLogin()">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/landing.js" charset="utf-8"></script>
+    <script src="scripts/messaging.js" charset="utf-8"></script>
+    <script src="scripts/util.js" charset="utf-8"></script>
+    <script src="scripts/profeditor.js" charset="utf-8"></script>
+
+    <div id="friend_overlay" class="overlay">
+      <div id="friend_overlay_container" class="overlay_container">
+          <h3>Search for a friends username</h3>
+          <p id="error"></p>
+          <input type="text" id="search_input"></input>
+          <button id="search_friend"><i class="lni lni-search"></i>Search</button>
+      </div>
+    </div>
+
+
+    <div class="outercontainer">
+      <div id="view_user_container">
+        <div id="profile_div"></div>
+        <div>
+          <div>
+            <h2 id="user_posts_title"></h2>
+            <div id="user_posts"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer">
+        <div id="post_input_div">
+          <input type="text" id="post_title_input"placeholder="Title of your post... "/> 
+          <textarea type="text" id="post_content_input"placeholder="Whats on your mind..."></textarea>
+          <p id="error"></p>
+          <div id="post_button_div">
+            <button id="submit_post"><i class="lni lni-rocket"></i> Publish! </button>
+            <button id="save_post"><i class="lni lni-save"></i> Save for later... </button>
+            <button id="discard_post"><i class="lni lni-trash-can"></i> Throw it away.</button>
+          </div>
+        </div>
+        <button id="new_post_button"><i class="lni lni-write"></i> Write a new post</button>
+
+        <div id="feed_navigator">
+          <div id="feed_navigation">
+          <i class="lni lni-pointer-left" id="feed_nav_left"></i>
+          <h2 id="feed_name"><i class="lni lni-star-filled"></i>New Posts!</h2>
+          <i class="lni lni-pointer-right" id="feed_nav_right" style="opacity:0.2"></i>
+          </div>
+          <div id="feeds_container">
+            <div id="posts_div"><div class="spacer"></div></div>
+           <div id="feed_div"><div class="spacer"></div></div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div>
+        <div class="nav_icon" id="menu">
+          <i class="lni lni-menu" id="nav_icon"></i>
+        </div>
+        <div id="user_info_div" onclick="changePage('.maincontainer', '#view_user_container')"></div>
+      </div>
+      <div id="logo_div" onclick="changePage('.maincontainer', '#view_user_container')">
+        <i class="lni lni-rocket" id="nav_icon"></i>
+        <h1 id="logotype">SnickSnack</h1>
+      </div>
+      <div class="nav_icon" id="settings" onclick="settingsMenu()">
+        <i class="lni lni-cog" id="nav_icon"></i>
+      </div>
+    </div>
+
+    <div class="settings_menu">
+      <h2>Settings</h2>
+      <div id="profile_editor_div">
+        <h3>Pick an image</h3>
+        <div class='image_option_div'></div>
+        <h3>Pick a color</h3>
+        <div class='color_option_div'></div>
+      </div>
+      <h3>Edit your bio</h3><textarea id='description_input'></textarea>
+      <button id="save_profile_settings" onclick="saveSettings()">
+        <p id="error"></p>
+        <i class="lni lni-save"></i> Save Settings
+      </button>
+      <button id="logout_button">
+        <i class="lni lni-enter"></i> Leave
+      </button>
+    </div>
+
+    <div class="menu">
+     <h2>Friend Requests</h2>
+     <div>
+       <div id="requests_div"></div>
+     </div>
+     <h2>Your friends</h2>
+     <div>
+        <div id="friends_div"></div>
+      </div>
+      <button id="add_friend">
+        <i class="lni lni-circle-plus"></i> Add new friends
+      </button>
+    </div>
+    <script src="scripts/buttons.js" charset="utf-8"></script>
+  </body>
+</html>
